@@ -55,7 +55,7 @@ const pacientes = [
   },
 ];
 
-const numeroPacientes = pacientes.reduce((acumulador) => ++acumulador, 0);
+const numeroPacientes = pacientes.length;
 const dietaDiabetes = pacientes
   .filter((pacientes) => pacientes.paciente.sexo === "H")
   .filter((pacientes) => pacientes.dieta === "Diabetes")
